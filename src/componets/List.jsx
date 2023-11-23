@@ -1,4 +1,3 @@
-
 const List = ({locations, remove}) => {
     return (
         <div>

@@ -47,3 +47,19 @@ button{
   justify-content: center;
   align-items: center;
 }
+
+.loader{
+  text-align: center;
+  margin-top: 45vh;
+}
+
+.loaderText{
+  font-size: 120px;
+  color: white;
+}
+
+.title{
+  text-align: center;
+  color: white;
+  font-size: 80px;
+}
