@@ -1,4 +1,3 @@
-// import { response } from 'express';
 import List from './componets/List'
 import { useState, useEffect } from 'react'
 
@@ -20,7 +19,7 @@ function App(){
     console.log(tours)
 
   // const [people, setPeople] = useState(tours);
-  const removePeople = (id) => {
+  const notIntrested = (id) => {
     let newPeople = tours.filter((person) => person.id !== id)
     setTours(newPeople)
   }
@@ -28,10 +27,10 @@ function App(){
   return (
     <main>
       <section className='container'>
-        <List people={tours} remove={removePeople}/>
+        <List locations={tours} remove={notIntrested}/>
         <div className='buttons'>
-          <button onClick={()=> setTours([])}>Clear</button>
-          <button onClick={()=> setTours(original)}>Reset</button>
+          {/* <button className="btn" onClick={()=> setTours([])}>Clear</button> */}
+          <button className="btn" onClick={()=> setTours(original)}>Refresh</button>
         </div>
       </section>
     </main>
